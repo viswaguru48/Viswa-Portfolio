@@ -1,0 +1,456 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+    transition: 300ms;
+}
+
+:root {
+    --primary-color: #020a30;
+    --secondary-color: #0b2a64;
+    --color1: #f7ef80;
+    --color2: #949eb1;
+    --color3: #d6dce0;
+    --font-family: "bai jamjuree";
+    --side-width: 265px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color3);
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--primary-color);
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border: 8px var(--color1) solid;
+}
+
+.profile:hover img {
+    transform: scale(1.1);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.nav-link {
+    color: var(--color2);
+    font-size: 18px;
+    padding: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.nav-link:hover {
+    color: var(--color1);
+}
+
+.home,
+.service,
+.about,
+.contact{
+    width: 100%;
+    min-height: 100vh;
+    height: 100%;
+    padding-left: var(--side-width);
+    border-bottom: 3px solid rgba(97, 91, 145, 0.329);
+}
+
+.home .container,
+.service .container,
+.contact .container {
+    height: 100vh;
+}
+
+.home h1 {
+    font-weight: 700 !important;
+}
+
+.home h1 span {
+    color: var(--color1);
+}
+
+.home P {
+    color: var(--color3);
+    font-size: 20px;
+}
+
+.navbar-brand {
+    color: var(--color1);
+    font-size: 18px;
+    font-weight: 700 !important;
+}
+
+.navbar-toggler-icon {
+    color: var(--color1) !important;
+}
+
+.home p span {
+    color: var(--color1);
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.homeinfo {
+    margin-left: 3%;
+}
+
+.explore {
+    background-color: var(--color1);
+    padding: 12px 28px;
+    font-weight: 700 !important;
+    margin-right: 15px;
+    font-size: 18px;
+    transition: 300ms;
+}
+
+.explore:hover {
+    transform: translateY(5px);
+    background-color: var(--color1);
+    transition: .5s;
+}
+
+.call {
+    color: var(--color3);
+    font-weight: 700 !important;
+    position: relative;
+    padding: 10px 0;
+}
+
+.call::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: var(--color1);
+    position: absolute;
+    left: 0;
+    top: 110%;
+    transition: all .5s;
+}
+
+.call:hover::after {
+    width: 100%;
+}
+
+.text-head {
+    color: var(--color1);
+}
+
+.servicon i {
+    color: var(--primary-color);
+    background-color: var(--color1);
+}
+
+.servinfo {
+    transition: all 0.5s;
+    background-color: var(--secondary-color);
+    border: 2px solid var(--color1);
+}
+
+.servinfo:hover {
+    box-shadow: -6px 6px 0 0 var(--color1);
+    border: 2px solid transparent;
+}
+
+.servinfo h5 {
+    font-size: 1.25rem;
+    font-weight: 700 !important;
+    color: var(--color1);
+}
+
+.servinfo p {
+    color: var(--color2);
+    font-size: 1.2rem;
+}
+
+.servcontent {
+    margin: 0 35px;
+}
+
+.readlink {
+    color: var(--color1);
+    font-weight: 700 !important;
+    position: relative;
+    font-size: 1.1rem;
+    padding: 10px 0;
+}
+
+.readlink::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    background-color: var(--color1);
+    left: 0;
+    top: 90%;
+    transition: all .5s;
+}
+
+.readlink:hover::after {
+    width: 100%;
+}
+
+.works p {
+    color: var(--color2);
+    font-weight: 700;
+}
+
+.projects {
+    padding-left: var(--side-width);
+    min-height: 120vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.projects .card {
+    background-color: var(--secondary-color);
+    border: none;
+}
+
+.workinfo {
+    z-index: 1;
+}
+
+.projects p {
+    color: var(--color2);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.projects h5 {
+    color: var(--color1);
+}
+
+.text-head h6 {
+    color: var(--color1);
+}
+
+.projects .card:hover {
+    box-shadow: -6px 6px 0 0 var(--color1);
+    border: none;
+}
+
+.projects .card:hover>.workimg img {
+    transform: scale(1.08);
+}
+
+.about .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.aboutinfo {
+    background-color: var(--secondary-color);
+    border: 2px solid var(--color1);
+}
+
+.about p {
+    color: var(--color2);
+    font-weight: 700 !important;
+}
+
+.about small {
+    color: var(--color3);
+}
+
+.about h4 {
+    color: var(--color1);
+}
+
+.about p {
+    color: var(--color3);
+}
+
+.rank {
+    padding: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.192);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.aboutinfo:hover .rank {
+    border: 2px solid var(--color1);
+}
+
+.aboutinfo:hover {
+    box-shadow: -6px 6px 0 0 var(--color1);
+    border: 2px solid transparent;
+}
+
+.aboutinfo p span {
+    color: var(--color1);
+    font-size: 1.25rem;
+}
+
+.contactcont {
+    height: 100vh;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+
+}
+
+.contact h6 {
+    color: var(--color1);
+}
+
+.form-group .form-control {
+    color: var(--color1);
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: var(--color3);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    color: var(--color1);
+    background-color: var(--secondary-color);
+    border-color: var(--color1) !important;
+    box-shadow: none;
+}
+
+.form-group textarea {
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    padding: 10px;
+}
+.contactbtn{
+    background-color: var(--color1);
+    font-weight: 700 !important;
+    color: var(--primary-color);
+    padding: 15px;
+}
+.contactbtn:hover{
+    background-color:#ffe600;
+}
+.footer{
+    padding-left: var(--side-width);
+}
+.footer p{
+    color: var(--color3);
+}
+.socioicons a i{
+    color: var(--color3);
+    font-size: 1.5rem;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 50%;
+}
+@media (min-width:992px) {
+    .navbar {
+        min-height: 100vh;
+        width: var(--side-width);
+        background: linear-gradient(rgba(3, 4, 71, 0.8), rgba(3, 13, 71, 0.8)), url(images/sidebar-img.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .nav-link {
+        position: relative;
+    }
+
+    .nav-link:hover::after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: var(--color1);
+        position: absolute;
+        top: 20px;
+        left: 95%;
+
+    }
+
+    .nav-link:hover::before {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background-color: var(--color1);
+        position: absolute;
+        top: 20px;
+        left: -22%;
+    }
+}
+
+@media (max-width:992px) {
+    .profile img {
+        transform: scale(1.16) translateY(15px);
+    }
+
+    .profile:hover img {
+        transform: scale(1.25) translateY(15px);
+    }
+
+    .home,
+    .service,
+    .projects,
+    .about,
+    .contact,
+    .footer {
+        padding: 0;
+    }
+    .footer .row{
+        margin: 0;
+    }
+    .homecontent {
+        width: 100%;
+    }
+
+    .home .container {
+        padding: 0;
+        min-height: 100vh;
+    }
+
+    .servcontent {
+        margin: 0 10px;
+    }
+
+    .service .container {
+        padding: 650px 0;
+    }
+
+    .homeinfo {
+        margin: 0;
+        text-align: center;
+    }
+    .projects, .about, .contact{
+        padding: 80px 0;
+    }
+}
+
+@media (max-width:404px){
+    .homebtn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
