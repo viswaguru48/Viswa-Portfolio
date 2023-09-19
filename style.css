@@ -421,6 +421,9 @@ body {
     .footer .row{
         margin: 0;
     }
+    .home{
+        margin-top: 50px;
+    }
     .homecontent {
         width: 100%;
     }
