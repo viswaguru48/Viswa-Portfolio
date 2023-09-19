@@ -261,7 +261,6 @@ body {
     flex-direction: column;
     justify-content: center;
     min-height: 100vh;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 
 }
 
@@ -310,8 +309,6 @@ body {
 
 .contactcont {
     height: 100vh;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
-
 }
 
 .contact h6 {
